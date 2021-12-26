@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=Chrome" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+	<link rel="stylesheet" href="issTracker.css">
+    <title> ISS Tracker </title>
+</head> 
+<body>
+    <h2>ISS Tracker</h2>
+
+    <!--Date & Time-->
+    <form action=".php">
+        <label for="issDateTime"> Let's track ISS: </label>
+        <input type="datetime-local" id="issDateTime" name="issDateTime">
+        <input type="submit">
+    </form>
+
+    <!--Latitude & Longitude-->
+    <p>
+        latitude : <span id="lat"></span>
+        longitude : <span id="lon"></span>
+    </p>
+
+    <!--Map-->
+    <div id="ISSMap"></div>
+
+
+
+
+
+
+
+    <script src="issTracker.js"></script>
+</body>
+</html>
